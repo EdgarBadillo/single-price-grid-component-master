@@ -5,46 +5,103 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="/css/normalize.css">
+  <link rel="stylesheet" href="/css/styles.css">
   
   <title>Frontend Mentor | Single Price Grid Component</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  
 </head>
 <body>
-  Join our community
 
-  30-day, hassle-free money back guarantee
+  <div role="main" class="container">
 
-  Gain access to our full library of tutorials along with expert code reviews. 
-  Perfect for any developers who are serious about honing their skills.
+    <section title="joinUs" class="joinUs">
 
-  Monthly Subscription
+      <h1  class="joinUs__title">
+      
+        Join our community
 
-  &dollar;29 per month
+      </h1>
 
-  Full access for less than &dollar;1 a day
+      <h2 class="joinUs__subtitle">
+        
+        30-day, hassle-free money back guarantee
 
-  Sign Up
+      </h2>
 
-  Why Us
+      <p class="joinUs__text" >
 
-  Tutorials by industry experts
-  Peer &amp; expert code review
-  Coding exercises
-  Access to our GitHub repos
-  Community forum
-  Flashcard decks
-  New videos every week
+        Gain access to our full library of tutorials along with expert code reviews. 
+        Perfect for any developers who are serious about honing their skills.
+
+      </p>
+    
+    </section>
+    
+    <section title="subscription" class="subscription">
+      
+      <h2 class="subscription__title">
+
+        Monthly Subscription
+        
+      </h2>
+
+      <div class="subscription__price">
+        <p class="subscription__price--dlls">   
+          &dollar;29
+        </p>
+
+        <span class="subscription__price--time">
+          per month
+        </span>
+      </div>
+
+      <p class="subscription__price--access" >
+        
+        Full access for less than &dollar;1 a day
+
+      </p>
+
+      <button class="subscription__button">
+        
+        Sign Up
+
+      </button>
+      
+      
+    </section>
+    
+    <section title="whyUs" class="whyUs" >
+      
+      
+       <h2 class="whyUs__title">  
+        Why Us 
+      </h2>
+      
+      <p class="whyUs__text">
+
+        Tutorials by industry experts <br> 
+        Peer &amp; expert code review <br>
+        Coding exercises <br>
+        Access to our GitHub repos <br>
+        Community forum <br>
+        Flashcard decks <br>
+        New videos every week
+
+      </p>
+      
+      
+    
+
+    </section>
+
+
+
+  </div>
+
+
   
-  <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
-    </p>
-  </footer>
+  
 </body>
 </html>
