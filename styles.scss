@@ -1,0 +1,206 @@
+// font
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+$paddingLeft : 1.5rem;
+
+*{
+
+   font-family: Karla;
+}
+
+body{
+
+    background-color: #F2F2F2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.container{
+
+    margin: 3rem 1rem 3rem 1rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3,1fr);
+    box-shadow: 0px 15px 30px rgba(0, 81, 171, 0.148847);
+    border-radius: 5px;
+    width: 311px;
+    height: 722px;
+
+    
+        .joinUs{
+        
+            background: #FFFFFF;
+        
+            .joinUs__title{
+
+                font-style: normal;
+                font-weight: bold;
+                font-size: 20px;
+                line-height: 23px;
+                letter-spacing: -0.25px;
+                color: #2AB3B1;
+                padding-left: $paddingLeft;
+            }
+
+            .joinUs__subtitle{
+
+                font-style: normal;
+                font-weight: bold;
+                font-size: 15px;
+                line-height: 20px;
+                letter-spacing: -0.1875px;
+                color: #C0DF33;
+                padding-left: $paddingLeft;
+
+            }
+
+            .joinUs__text{
+
+                font-style: normal;
+                font-weight: normal;
+                font-size: 14px;
+                line-height: 26px;
+                letter-spacing: -0.175px;
+                color: #9AA7BE;
+                padding-left: $paddingLeft;
+                padding-right: 1.5rem;
+
+            }
+
+        }
+
+        .subscription{
+
+            background: #2AB3B1;
+            padding: 2.7rem 1.5rem 2rem 1.5rem;
+            
+                .subscription__title{
+
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 18px;
+                    line-height: 21px;
+                    letter-spacing: -0.225px;
+                    color: #FFFFFF;
+                    margin-top: -5px;
+
+                }
+
+                .subscription__price{
+
+                    display: flex;
+                    align-items: center;
+
+                    .subscription__price--dlls{
+
+                        font-weight: bold;
+                        font-size: 32px;
+                        line-height: 37px;
+                        letter-spacing: -0.4px;
+                        color: #FFFFFF;
+                        margin: 0;
+
+                    }
+
+                    .subscription__price--time{
+
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 16px;
+                        line-height: 26px;
+                        letter-spacing: -0.2px;
+                        color: #FFFFFF;
+                        mix-blend-mode: normal;
+                        opacity: 0.5;
+                        padding-left: 1rem;
+                    }
+                }
+
+                .subscription__price--access{
+
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 16px;
+                    line-height: 26px;             
+                    letter-spacing: -0.2px;
+                    color: #FFFFFF;
+
+                }
+
+                .subscription__button{
+
+                    width: 263px; 
+                    height: 48px;
+                    background: #C0DF33;
+                    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.0973011);
+                    border-radius: 5px;
+                    border: none;
+                    color: white;
+                    
+                }
+
+        }
+
+        .whyUs{
+
+            padding: 1.5rem;
+            background: #3ec5c3;
+           
+            .whyUs__title{
+
+                font-style: normal;
+                font-weight: bold;
+                font-size: 18px;
+                line-height: 21px;    
+                letter-spacing: -0.225px;             
+                color: #FFFFFF;
+            }  
+            
+            .whyUs__text{
+
+                font-style: normal;
+                font-weight: normal;
+                font-size: 14px;
+                line-height: 20px;
+                letter-spacing: -0.175px;            
+                color: #FFFFFF;              
+                mix-blend-mode: normal;
+                opacity: 0.75;
+            }
+
+        }
+
+}
+
+@media screen and(min-width:1060px){
+
+body{
+
+    height: 100vh;
+
+
+}
+.container{
+
+    width: 635px;
+    height: 475px;
+
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+
+    .joinUs{
+
+        grid-column: 1/3;
+        grid-row: 1/2;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+
+    }
+}
+
+
+
+}
